@@ -22,7 +22,7 @@ app.get('/:room',(req,res)=>{
 })
 
 
-server.listen(PORT,()=>{
+server.listen(process.env.PORT||PORT,()=>{
     console.log(`Server Started on port ${PORT}`)
 });
 
